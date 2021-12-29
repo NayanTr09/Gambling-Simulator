@@ -10,7 +10,7 @@ import java.util.Random;
 
 /* Initialized Bet and Gambler wins if StartBet equals 1 otherwise loses */
 public class GamblingSimulator {
-    public static int WinorLose(){
+    public static void WinorLose(){
         Random Ran = new Random();
         int StartBet = Ran.nextInt(2);
         if(StartBet == 1) {
@@ -19,7 +19,7 @@ public class GamblingSimulator {
             else {
             System.out.println("Gambler looses the bet");
             }
-            return WinorLose();
+
     }
 
 
